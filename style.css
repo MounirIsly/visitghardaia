@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: "header header header"
+                           "main main main"
+                           "footer footer footer";
+}
+.visit-ghardaia-logo {
+    max-width: 250px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.header {
+    border-bottom: 1px solid gray;
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    padding: 20px 10px;
+}
+.contact-btn {
+    background-color: green;
+    color: white;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.sub-nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(198, 198, 3);
+    padding-top: 25px;
+}
+.sub-nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+.sub-nav-items a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+.primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./images/primary-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    max-width: 100%;
+    box-shadow: inset 0px 0px 150px 50px black;
+}
+.primary-heading {
+    color: wheat;
+    text-align: center;
+    margin-top: 3em;
+    padding: 20px 0;
+    opacity: .6;
+    background-color: black;
+}
+.primary-filter {
+    background-color: gold;
+    width: 50%;
+    margin: -50px auto;
+    opacity: .6;
+}
+.primary-filter h3 {
+    margin: 0;
+    color: rgb(81, 155, 75);
+    padding: 1em 0;
+    text-align: center;
+}
+.filters {
+    padding-top: 30px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.primary-select-input {
+    background-color: rgb(55, 73, 133);
+    padding: 10px;
+    margin: 0px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+/* Main contant style */
+.primary-content {
+    display: flex;
+    padding: 5em;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.col-1 { 
+    width: 50%;
+}
+.col-2 {
+    background-image: url(./images/ghardaia.jpg);
+    width: 50%;
+    height: 250px;
+}
